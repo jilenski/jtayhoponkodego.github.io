@@ -1,3 +1,3 @@
 # jtayhoponkodego.github.io
 
-MiniProject 1
+Mini Project 1
