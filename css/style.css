@@ -333,14 +333,24 @@ span.psw {
     background-color: #13C5DD;
     color: white;
     padding: 10px 20px;
-    border: none;
+    border: 2px solid rgba(245, 245, 245, 0.37);
     cursor: pointer;
     position: fixed;
-    bottom: 15px;
-    right: 30px;
+    bottom: 10px;
+    right: 0px;
     width: 150px;
-    height: 70px;
-    border-radius: 100px;   
+    height: 60px;
+    border-radius: 10px;  
+    font-weight: 700;
+    transition: .5s; 
+    z-index: 9;
+  }
+
+  .open-button:hover { 
+    -webkit-box-shadow: 0 8px 6px -6px #555555;
+    -moz-box-shadow: 0 8px 6px -6px #555555;
+    box-shadow: 0 8px 6px -6px #555555;
+    color: var(--dark);  
   }
   
   /* The popup chat - hidden by default */
@@ -351,7 +361,7 @@ span.psw {
     right: 0px;
     border: 3px solid #13C5DD;
     border-radius: 10px 10px 0px 0px;
-    z-index: 9;
+    z-index: 99;
   }
   
   /* Add styles to the form container */
