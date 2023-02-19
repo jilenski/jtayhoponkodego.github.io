@@ -726,11 +726,34 @@
     </div>
     <!-- Footer End -->
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
+    <!-- Chatbox-->
+    <div>
+        <button class="open-button " onclick="openForm()">Need Help?</button>
+    
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+            <img src="img/nurse.png" alt="" height="100px">
+    
+            <label for="msg"><b>Nurse (Online)</b></label>
+            
+            <div class="chathistory">
+                <p>Hello. How are you today?</p>
+                <span class="time-right"><small>11:00</small></span>
+            </div>
+              
+            <div class="chathistory darker">
+                <p>Hey! I'm fine. Thanks for asking!</p>
+                <span class="time-left"><small>11:01</small></span>
+            </div>
+    
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+    
+            <button type="reset" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        </div>
+    
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
