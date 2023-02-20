@@ -6,12 +6,14 @@
   <title>MDCare - eHealth Portal</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
+  <link rel="stylesheet" href="assets/bundles/fullcalendar/fullcalendar.min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='img/logo.png' />
+  
 </head>
 
 <body>
@@ -179,10 +181,10 @@
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
-            <li class="active">
+            <li class="dropdown">
               <a href="dashboard.html" class="nav-link"><i data-feather="home"></i><span>Home</span></a>
             </li>
-            <li class="dropdown">
+            <li class="active">
               <a href="appointments.html" class="nav-link"><i data-feather="calendar"></i><span>Appointments</span></a>
             </li>
             <li class="dropdown">
@@ -254,111 +256,63 @@
                 </div>
               </div>
             </div>
-                
+            
             <div class="row ">
-              <div class="col-x1-4 col-md-12 col-lg-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Appointments</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="media">
-                      <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-2.jpg">
-                      <div class="media-body">
-                        <div class="media-title">Dr Firstname Surname</div>
-                        <div class="text-job text-muted">Gastroenterologist</div>
-                      </div>
-                    </div></br>
-                    <div class="grid-container">
-                      <div class="grid-item">
-                        <span>Date</span>
-                        <div class="text-dark mb-2">Friday 17 March, 2023</div>
-                      </div>
-                      <div class="grid-item">
-                        <span>Time</span>
-                        <div class="text-dark mb-2">9:30am to 10:00am</div>
-                        <div class="text-info mb-2"><i class="fas fa-clock"></i><b> 30 mins</b></div>
-                      </div>
-                      <div class="grid-item">
-                        <span>Address</span>
-                        <div class="text-dark mb-2">Suite 405, Level 4/188</br>
-                          123 Street, Quezon City</br>
-                          Philippines</div>
-                      </div>  
-                      <div class="grid-item">
-                        <span>Areas of Interest</span>
-                        <div class="text-dark mb-2">Men’s health</br>
-                          Travel medicine</br>
-                          Travel advice</br>
-                          General practice</div>
-                      </div>
-                      <div class="grid-item">
-                        <a href="#" class="text-secondary mb-2"><i class="fas fa-times-circle"></i><b> Cancel Booking</b></a>
-                      </div>
-                      <div class="grid-item">
-                        <a href="#" class="text-secondary mb-2"><i class="fas fa-calendar-alt"></i><b> Reschedule</b></a>
-                      </div>  
+                <div class="col-xl-8 col-md-12 col-lg-8">
+                    <div class="card">
+                    <div class="card-header">
+                        <h4>Appointments</h4>
                     </div>
-                  </div>
-                </div>
-              </div>
+                    <div class="card-body">
+                        <div class="media">
+                            <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-2.jpg">
+                            <div class="media-body">
+                                <div class="media-title">Dr Firstname Surname</div>
+                                <div class="text-job text-muted">Gastroenterologist</div>
+                            </div>
+                        </div></br>
 
-              <div class="col-xl-8 col-md-12 col-lg-8">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Recent Activity</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-unstyled user-progress list-unstyled-border list-unstyled-noborder">
-                      <li class="media">
-                        <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-2.jpg">
-                        <div class="media-body">
-                          <div class="media-title">Dr Firstname Surname</div>
-                          <div class="text-job text-muted">03 May, 2022</div>
+                        <div class="grid-container">
+                            <div class="grid-item-appt">
+                                <span>Date</span>
+                                <div class="text-dark mb-2">Friday 17 March, 2023</div>
+                            </div>
+                        <div class="grid-item-appt">
+                                <span>Time</span>
+                                <div class="text-dark mb-2">9:30am to 10:00am</div>
+                                <div class="text-info mb-2"><i class="fas fa-clock"></i><b> 30 mins</b></div>
                         </div>
-                        <div class="media-progressbar">
-                          <div>Dr Firstname Surname added two new conditions to your health record on the 09 May regarding your symptoms</div>
+                        <div class="grid-item-appt">
+                            <span>Address</span>
+                            <div class="text-dark mb-2">Suite 405, Level 4/188</br>
+                            123 Street, Quezon City</br>
+                            Philippines</div>
+                        </div>  
+                        <div class="grid-item-appt">
+                            <span>Areas of Interest</span>
+                            <div class="text-dark mb-2">Men’s health</br>
+                            Travel medicine</br>
+                            Travel advice</br>
+                            General practice</div>
                         </div>
-                      </li>
-                      <li class="media">
-                        <img alt="image" class="mr-3 rounded-circle" width="50" src="img/medicard.png">
-                        <div class="media-body">
-                          <div class="media-title">MediCard</div>
-                          <div class="text-job text-muted">24 Apr, 2022</div>
-                        </div>
-                        <div class="media-progressbar">
-                          <div>Medicard has sent a benefit of $132.44 for item <span class="badge badge-info">3566</span> </div>
-                        </div>
-                      </li>
-                      <li class="media">
-                        <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-3.jpg">
-                        <div class="media-body">
-                          <div class="media-title">Dr Firstname Surname</div>
-                          <div class="text-job text-muted">17 Apr, 2022</div>
-                        </div>
-                        <div class="media-progressbar">
-                          <div>
-                            <div>Dr Firstname Surname has updated the prescription of <span class="badge badge-info">Alfuzosin</span> from 8mg to 10mg </div>
-                          </div></br>
-                          <div class="alert alert-light">
-                            Note: “This increase should help manage some of the pain as well as the inflammation. Be sure to take with food and try to avoid direct sun exposure if possible.”
-                          </div>
-                        </div>
-                      </li>
-                      <li class="media">
-                        <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-1.jpg">
-                        <div class="media-body">
-                          <div class="media-title">Dr Firstname Surname</div>
-                          <div class="text-job text-muted">03 Mar, 2022</div>
-                        </div>
-                        <div class="media-progressbar">
-                          <div>Dr Firstname Surname at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                    </div>
+                    </div>
+                    </div>
                 </div>
-              </div>
+
+
+                <div class="col-x1-4 col-md-12 col-lg-4">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Calendar</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="fc-overflow">
+                          <div id="myEvent"></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
             </div>
 
@@ -569,7 +523,9 @@
   <!-- General JS Scripts -->
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
+  <script src="assets/bundles/fullcalendar/fullcalendar.min.js"></script>
   <!-- Page Specific JS File -->
+  <script src="assets/js/page/calendar.js"></script>
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
@@ -577,5 +533,4 @@
 </body>
 
 
-<!-- blank.html  21 Nov 2019 03:54:41 GMT -->
 </html>
